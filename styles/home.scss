@@ -28,7 +28,6 @@
 }
 
 #home-content {
-  padding: 3rem;
   display: none;
   grid-template-columns: 50% 50%;
   align-items: center;
@@ -40,7 +39,6 @@
 .title {
   grid-column: 1 / -1;
   grid-row: 1;
-  font-family: "Prata", serif;
   font-size: 3vw;
   width: 100%;
   z-index: 2;

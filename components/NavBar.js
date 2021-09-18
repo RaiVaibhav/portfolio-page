@@ -5,7 +5,7 @@ import email from "../public/email.png";
 
 export const NavBar = () => {
   return (
-    <nav className="nav-bar">
+    <nav className="nav-bar px-12 py-4">
       <h4 className="flex-1">Vaibhav Rai</h4>
       <div className="icons flex-1">
         <a

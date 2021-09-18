@@ -1,4 +1,6 @@
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 * {
   margin: 0;
@@ -6,10 +8,10 @@
   box-sizing: border-box;
   position: relative;
   color: #fff;
-  font-family: "Poppins", sans-serif;
 }
 body {
   background: rgb(24, 24, 24);
+  overflow-x: hidden;
 }
 
 a {
@@ -23,6 +25,5 @@ nav {
   align-items: center;
   width: 100%;
   display: flex;
-  padding: 1rem 2rem 1rem 2rem;
   justify-content: space-between;
 }
