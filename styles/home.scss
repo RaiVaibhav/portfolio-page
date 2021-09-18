@@ -1,35 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  position: relative;
-  color: #fff;
-  font-family: "Poppins", sans-serif;
-}
-body {
-  background: rgb(24, 24, 24);
-
-}
-nav {
-  position: absolute;
-  width: 100%;
-  display: flex;
-  padding: 2rem 3rem 3rem 3rem;
-  justify-content: space-between;
-}
-
-.container {
-  height: 100vh;
-  background: rgb(24, 24, 24);
-}
-.container img {
-  width: 100%;
-  position: absolute;
-  height: 110vh;
-  object-fit: contain;
-  z-index: 1;
-  opacity: 0.3;
-}
 .main-title {
   position: absolute;
   z-index: 3;
@@ -59,22 +27,6 @@ nav {
   font-size: 1.1rem;
 }
 
-.nav-bar {
-  position: absolute;
-  z-index: 999;
-}
-
-.iframely-embed {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 50;
-  background: white;
-}
-
-
 #home-content {
   padding: 3rem;
   display: none;
@@ -82,21 +34,16 @@ nav {
   align-items: center;
   height: 100vh;
   width: 100%;
-  z-index: 2  ;
+  z-index: 2;
 }
-
-@import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
 
 .title {
   grid-column: 1 / -1;
   grid-row: 1;
-
   font-family: "Prata", serif;
-  font-size: 4.2vw;
+  font-size: 3vw;
   width: 100%;
   z-index: 2;
-
-  // start
 
   > .title-inner {
     display: inline-block;
@@ -130,35 +77,13 @@ nav {
   }
 }
 
-.cafe,
-.about {
-  animation: outer-left 1s 1s cubic-bezier(0.5, 0, 0.1, 1) both;
-  // outline: 1px solid red;
-}
-
-
-.title-inner {
+.cafe-inner, .cafe-inner {
   display: inline-block;
-  animation: inner-left 1s 1s ease both;
 }
 
-.cafe-inner {
-  display: inline-block;
-  animation: inner-left 1s 1s ease both,
-    text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
-}
-
-.about-inner {
-  animation: text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
-}
-
-.title {
-  animation: outer-left 1s 1s ease both;
-}
 
 .cafe {
-  // start
-  > .cafe-inner {
+    > .cafe-inner {
     display: inline-block;
   }
 }
@@ -177,16 +102,6 @@ nav {
   opacity: 0.7;
   height: 100%;
   width: 100%;
-  animation: image-in 1s cubic-bezier(0.5, 0, 0.1, 1) 2s backwards;
-  @keyframes image-in {
-    from {
-      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    }
-    to {
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    }
-  }
-
   img {
     max-width: 40vw;
     position: absolute;
@@ -195,7 +110,7 @@ nav {
   }
 }
 
-.image-2{
+.image-2, .about-2-inner{
   opacity: 0;
 }
 
@@ -206,6 +121,9 @@ nav {
   }
   .home-content-image > img {
     max-width: 100%;
+  }
+  .title {
+    font-size: 4vw;
   }
 }
 
