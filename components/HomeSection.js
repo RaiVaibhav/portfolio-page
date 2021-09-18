@@ -20,7 +20,6 @@ const load = () => {
         {
           clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
           duration: 1,
-          delay: 1,
         }
       )
       .fromTo(
