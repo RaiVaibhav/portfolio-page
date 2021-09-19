@@ -27,3 +27,9 @@ nav {
   display: flex;
   justify-content: space-between;
 }
+
+@layer utilities {
+  .flex-2 {
+    flex: 2 !important;
+  }  
+}

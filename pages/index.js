@@ -3,8 +3,15 @@ import Head from "next/head";
 import { NavBar } from "../components/NavBar";
 import { HomeSection } from "../components/HomeSection";
 import { ProjectSection } from "../components/projectsSection";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+  let [isLoaded, SetIsLoaded] = useState(false);
+  useEffect(() => {
+    // homeGsap();
+    SetIsLoaded(true);
+  }, []);
+  console.log(isLoaded)
   return (
     <>
       <Head>
@@ -33,8 +40,14 @@ export default function Home() {
       <NavBar />
 
       <div id="main">
-        <HomeSection />
-        {/* <ProjectSection /> */}
+        <div className={`loading-wrapper ${isLoaded ? "" : "spinner"}`}>
+          {isLoaded && (
+            <>
+              <HomeSection />
+              <ProjectSection />
+            </>
+          )}
+        </div>
       </div>
     </>
   );
