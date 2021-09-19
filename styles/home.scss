@@ -91,9 +91,10 @@
 }
 
 .home-content-image {
+  overflow-y: hidden;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: end;
   grid-row: 1;
   grid-column: 2;
   position: relative;
@@ -257,10 +258,12 @@
   top: 15px;
 }
 
-.iframe {
-  min-height: 500px;
+iframe {
+  min-height: 450px;
+  width: 100%;
 }
 
-iframe {
-  width: 100%;
+
+#projects {
+  height: unset;
 }

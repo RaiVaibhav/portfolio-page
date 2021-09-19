@@ -42,7 +42,6 @@ export const homeGsap = () => {
         trigger: "#main",
         pin: true,
         start: "top top",
-        end: '+=2000px',
         scrub: 1,
       },
     });
@@ -73,15 +72,15 @@ export const homeGsap = () => {
         { y: "0%", duration: 3, ease: Linear.easeInOut, opacity: 1 },
         "<"
       )
-      .set(
-        "nav",
-        {
-          background: "rgb(35, 35, 35)",
-          boxShadow: "rgb(0 0 0 / 5%) 0px 3px 3px",
-          duration: 0,
-          delay: 0
-        },
-        '<'
-      )
+      // .set(
+      //   "nav",
+      //   {
+      //     background: "rgb(35, 35, 35)",
+      //     boxShadow: "rgb(0 0 0 / 5%) 0px 3px 3px",
+      //     duration: 0,
+      //     delay: 0
+      //   },
+      //   '<'
+      // )
   }
 };

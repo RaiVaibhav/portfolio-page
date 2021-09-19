@@ -12,9 +12,10 @@ function ProjectIframe({ src }) {
   return (
     <div  className="flex-1 lg:flex-2 iframe flex">
       <iframe
+        className="rounded-md"
         ref={ref}
         title={src}
-        style={{ opacity: isLoading ? "0" : "1" }}
+        // style={{ opacity: isLoading ? "0" : "1" }}
         src={inView ? src : undefined}
         onLoad={() => SetisLoading(!isLoading)}
         frameBorder="0"
