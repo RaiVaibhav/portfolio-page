@@ -5,20 +5,24 @@
 :root {
   --nav-bg-color: rgb(35, 35, 35);
 }
+html {
+  @apply text-white
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   position: relative;
-  color: #fff;
+
 }
+
 body {
-  /* overflow-x: hidden; */
+  background: rgb(61 61 61);
 }
+
 section {
-  background: rgb(51 51 51);
   height: 100vh;
-  /* width: 100vw; */
 }
 
 a {
