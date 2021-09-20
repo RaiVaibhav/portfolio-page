@@ -14,7 +14,7 @@ const ProjectCard = ({
   githubLink,
 }) => {
   return (
-    <div className="flex mb-16 pb-12 pl-12 pr-12 pt-4 gap-4 project-card-bg-color flex-col xl:flex-row flex-wrap shadow-2xl flex-1 card-height container mx-auto shadow-lg rounded-md justify-center">
+    <div className="flex mb-16 pb-12 pl-12 pr-12 pt-4 grid-gap-4 project-card-bg-color flex-col xl:flex-row flex-wrap shadow-2xl flex-1 card-height container mx-auto shadow-lg rounded-md justify-center">
       <div className="flex justify-items-end flex-col flex-1">
         <div className="flex-1 flex flex-col items-start pb-4 xl:pb-0 xl:text-left pt-4">
           <ProjectSkills skills={skills} />
@@ -31,7 +31,7 @@ const ProjectCard = ({
           {description && <div>{description}</div>}
         </div>
         {referLink && (
-          <div className="flex gap-2">
+          <div className="flex grid-gap-2">
             <a
               href={referLink}
               className="flex py-2 px-4 text-md text-center bg-gray-600 rounded-md icon-hover"

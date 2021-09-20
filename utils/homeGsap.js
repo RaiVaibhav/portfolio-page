@@ -42,7 +42,7 @@ export const homeGsap = () => {
         trigger: "#main",
         pin: true,
         start: "top top",
-        scrub: 0.5,
+        scrub: true,
       },
     });
     timeline2
@@ -77,6 +77,14 @@ export const homeGsap = () => {
         {
           background: "rgb(35, 35, 35)",
           boxShadow: "rgb(0 0 0 / 5%) 0px 3px 3px",
+          duration: 0,
+          delay: 0
+        },
+      )
+      .from(
+        "#projects",
+        {
+          y: "0%",
           duration: 0,
           delay: 0
         },

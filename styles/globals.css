@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .grid-gap-1 {
+    grid-gap: 0.25rem;
+  }
+  .grid-gap-2 {
+    grid-gap: 0.5rem;
+  }
+  .grid-gap-3 {
+    grid-gap: 0.75rem;
+  }
+  .grid-gap-4 {
+    grid-gap: 1rem;
+  }
+}
 :root {
   --nav-bg-color: rgb(35, 35, 35);
 }

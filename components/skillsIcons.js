@@ -5,7 +5,7 @@ library.add(faHtml5, faJs, faCss3, faReact, faPython, faNode, faGithub);
 
 export const ProjectSkills = ({ skills }) => {
   return (
-    <div className="flex text-gray-500 pb-3 gap-3">
+    <div className="flex text-gray-500 pb-3 grid-gap-3">
       { skills.map(i => <FontAwesomeIcon key={i} icon={["fab", i]} size="2x" />)}
     </div>
   );
