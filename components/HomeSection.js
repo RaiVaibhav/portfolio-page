@@ -36,7 +36,7 @@ export const HomeSection = () => {
           <div className="arrow-1 animated hinge infinite zoomIn"></div>
         </div>
 
-        <div id="home-content" style={{ display: isLoaded && "grid" }} className="px-24">
+        <div id="home-content" style={{ display: isLoaded && "grid" }} className="px-12 lg:px-24">
           <div className="title">
             <div className="title-inner">
               <div className="cafe">

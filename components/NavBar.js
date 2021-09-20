@@ -5,12 +5,13 @@ import email from "../public/email.png";
 
 export const NavBar = () => {
   return (
-    <nav className="nav-bar px-24 py-4">
-      <h4 className="flex-1">Vaibhav Rai</h4>
+    <nav className="nav-bar px-12 lg:px-24 py-4">
+      <h4 className="flex-1 font-medium">Vaibhav Rai</h4>
       <div className="icons flex-1">
         <a
           href="https://twitter.com/raivaibhav08"
           rel="noreferrer"
+          className="icon-hover"
           title="twitter"
           target="_blank"
         >
@@ -26,6 +27,7 @@ export const NavBar = () => {
           href="https://github.com/RaiVaibhav"
           rel="noreferrer"
           title="github"
+          className="icon-hover"
           target="_blank"
         >
           <Image
@@ -36,7 +38,7 @@ export const NavBar = () => {
             className="icon github"
           />
         </a>
-        <a href="mailto: raivaibhav08@gmail.com" rel="noreferrer" title="email">
+        <a href="mailto: raivaibhav08@gmail.com" className="icon-hover" rel="noreferrer" title="email">
           <Image
             src={email}
             height={30}
