@@ -32,7 +32,7 @@ html {
 }
 
 body {
-  background: rgb(61 61 61);
+  background: rgb(41 41 41);
 }
 
 section {
@@ -60,3 +60,23 @@ nav {
     background-color: var(--nav-bg-color);
   }
 }
+
+.gradient-b {
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 3px;
+  border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+}
+
+/* img {
+  max-width: 250px;
+  color: white;
+  border-width: 3px;
+  border-style: solid;
+  border-image: 
+    linear-gradient(
+      to bottom, 
+      red, 
+      rgba(0, 0, 0, 0)
+    ) 1 100%;
+} */

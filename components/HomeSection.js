@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 
 import { useEffect, useState } from "react";
-import image1 from "../public/image1.webp";
+import image2 from "../public/image2.webp";
 import { homeGsap } from "../utils/homeGsap";
 
 export const HomeSection = () => {
@@ -37,20 +37,20 @@ export const HomeSection = () => {
         <div
           id="home-content"
           style={{ display: isLoaded && "grid" }}
-          className="px-12 lg:px-24"
+          className="px-8 lg:px-24"
         >
           <div className="title">
             <div className="title-inner flex flex-col gap-2">
               <div className="cafe sm:text-3xl lg:text-4xl">
-                <div className="cafe-inner ">Hello, I am a</div>
+                <div className="cafe-inner ">Hello, I am Vaibhav</div>
               </div>
               <div className="about sm:text-4xl lg:text-5xl">
-                <div className="about-inner">Frontend Developer</div>
+                <div className="about-inner">A Frontend Developer</div>
               </div>
               <div className="flex my-1 mx-1 opacity-0 resume">
                 <a
                   href="https://drive.google.com/file/d/1Ftmm4AtSsD_s6asKx7eSiJuS_W3Et5pX/view"
-                  className="hover:bg-gray-400 p-2 text-xs md:text-base text-center bg-gray-600 rounded-md icon-hover opacity-0 sm:opacity-80"
+                  className="gradient-b hover:bg-gray-700 p-2 text-xs md:text-base text-center rounded-md icon-hover sm:opacity-80"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -61,7 +61,7 @@ export const HomeSection = () => {
           </div>
           <div className="home-content-image">
             <img
-              src={image1.src}
+              src={image2.src}
               className="image-1"
               alt="animated vaibhav image"
             />

@@ -11,6 +11,16 @@ let data = [
       "Working as a Front-End Engineer on the Klinify web dashboard which helps clinics in augmenting their traditional consult services to patients. As a team member, my work includes developing the demanded feature like drug to drug iteraction checker, handle the web app performance and fixing it, integration testing and maintain the release cycle.",
   },
   {
+    heading: "CSS Only Art Gallery",
+    key: "card-4",
+    referLink: "https://codepen.io/raivaibhav/pen/WNjaqOw",
+    referText: "Visit Demo",
+    src: "https://codepen.io/raivaibhav/embed/WNjaqOw?default-tab:result",
+    skills: ["css3", "html5"],
+    description:
+      "A CSS only art gallery, it helped me in deep diving into how transform, keyframes work into the css and the how powerfull css is.",
+  },
+  {
     heading: "Tihatsu",
     key: "tihatsu",
     src: "https://nftvisionhack.netlify.app/",
@@ -43,16 +53,6 @@ let data = [
     skills: ["python"],
     description:
       "The aim was to create better quality Bears (analyzers) by creating a tool that has the ability to jump directly into Bear code and move through it using a debugger interface. I learned about the pdb, single thread, coverage, mock tests and lastly how awesome open source community is.",
-  },
-  {
-    heading: "CSS Only Art Gallery",
-    key: "card-4",
-    referLink: "https://codepen.io/raivaibhav/pen/WNjaqOw",
-    referText: "Visit Demo",
-    src: "https://codepen.io/raivaibhav/embed/WNjaqOw?default-tab:result",
-    skills: ["css3", "html5"],
-    description:
-      "A CSS only art gallery, it helped me in deep diving into how transform, keyframes work into the css and the how powerfull css is.",
   },
 ];
 
