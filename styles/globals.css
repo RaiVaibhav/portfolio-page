@@ -37,6 +37,7 @@ body {
 
 section {
   height: 100vh;
+  max-width: 100vw;
 }
 
 a {

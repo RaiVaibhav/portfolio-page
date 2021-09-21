@@ -42,7 +42,9 @@
   font-size: 3vw;
   width: 100%;
   z-index: 2;
-
+  > .title-inner {
+    width: fit-content;
+  }
 }
 
 @keyframes text-clip {

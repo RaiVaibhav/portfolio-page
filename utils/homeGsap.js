@@ -6,7 +6,7 @@ export const homeGsap = () => {
     gsap.registerPlugin(ScrollTrigger);
     let timeline1 = gsap.timeline();
     timeline1
-      .set(".title-inner", { x: "50%", delay: 0.3 })
+      .set(".title-inner", { x: "100%", delay: 0.3 })
       .fromTo(
         ".title-inner",
         {
@@ -20,7 +20,7 @@ export const homeGsap = () => {
       .fromTo(
         ".title-inner",
         {
-          x: "50%",
+          x: "100%",
         },
         {
           x: "0%",
