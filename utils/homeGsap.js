@@ -6,7 +6,7 @@ export const homeGsap = () => {
     gsap.registerPlugin(ScrollTrigger);
     let timeline1 = gsap.timeline();
     timeline1
-      .set(".title-inner", { x: "100%", delay: 0.3 })
+      .set(".title-inner", { x: "50%", delay: 0.3 })
       .fromTo(
         ".title-inner",
         {
@@ -20,7 +20,7 @@ export const homeGsap = () => {
       .fromTo(
         ".title-inner",
         {
-          x: "100%",
+          x: "50%",
         },
         {
           x: "0%",
@@ -36,7 +36,7 @@ export const homeGsap = () => {
           clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
           duration: 1,
         }
-      );
+      ).to(".resume", { opacity: 1, ease: Linear.easeIn})
     let timeline2 = gsap.timeline({
       scrollTrigger: {
         trigger: "#home",

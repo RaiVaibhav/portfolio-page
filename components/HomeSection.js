@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import image1 from "../public/image1.webp";
 import { homeGsap } from "../utils/homeGsap";
 
-
 export const HomeSection = () => {
   let [isLoaded, SetIsLoaded] = useState(false);
   useEffect(() => {
@@ -35,14 +34,28 @@ export const HomeSection = () => {
           <div className="arrow-1 animated hinge infinite zoomIn"></div>
         </div>
 
-        <div id="home-content" style={{ display: isLoaded && "grid" }} className="px-12 lg:px-24">
+        <div
+          id="home-content"
+          style={{ display: isLoaded && "grid" }}
+          className="px-12 lg:px-24"
+        >
           <div className="title">
-            <div className="title-inner">
-              <div className="cafe">
-                <div className="cafe-inner">Hello, I am a</div>
+            <div className="title-inner flex flex-col gap-2">
+              <div className="cafe sm:text-3xl lg:text-4xl">
+                <div className="cafe-inner ">Hello, I am a</div>
               </div>
-              <div className="about">
+              <div className="about sm:text-4xl lg:text-5xl">
                 <div className="about-inner">Frontend Developer</div>
+              </div>
+              <div className="flex my-1 mx-1 opacity-0 resume">
+                <a
+                  href="https://drive.google.com/file/d/1Ftmm4AtSsD_s6asKx7eSiJuS_W3Et5pX/view"
+                  className="hover:bg-gray-400 p-2 text-xs md:text-base text-center bg-gray-600 rounded-md icon-hover opacity-0 sm:opacity-80"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Download Resume
+                </a>
               </div>
             </div>
           </div>

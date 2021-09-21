@@ -34,7 +34,7 @@ function ProjectIframe({ src }) {
         allowFullScreen
       />
       {isLoading && (
-        <div className="animate-pulse bg-gray-100 w-full h-full absolute flex items-center justify-center rounded-md">
+        <div className="bg-gray-100 w-full h-full absolute flex items-center justify-center rounded-md">
           <svg
             className="h-16 w-16"
             version="1.1"
