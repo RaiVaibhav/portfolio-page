@@ -63,9 +63,8 @@ nav {
 
 .gradient-b {
   border: 10px solid;
-  border-image-slice: 1;
   border-width: 3px;
-  border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+  border-image: linear-gradient(to left, #743ad5, #d53a9d) 1;
 }
 
 /* img {
