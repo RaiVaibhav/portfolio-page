@@ -25,7 +25,7 @@ const ProjectCard = ({
     }
   }, [inView])
   return (
-    <div ref={ref} className={`flex mb-16 pb-12 pl-12 pr-12 pt-4 grid-gap-4 project-card-bg-color flex-col xl:flex-row flex-wrap shadow-2xl flex-1 card-height container mx-auto shadow-lg rounded-md justify-center ${fadeClass}`}>
+    <div ref={ref} className={`flex mb-16 pb-12 pl-12 pr-12 pt-4 grid-gap-4 project-card-bg-color flex-col xl:flex-row flex-wrap shadow-2xl flex-1 card-height container shadow-lg rounded-md justify-center ${fadeClass}`}>
       <div className="flex justify-items-end flex-col flex-1">
         <div className="flex-1 flex flex-col items-start pb-4 xl:pb-0 xl:text-left pt-4">
           <ProjectSkills skills={skills} />
