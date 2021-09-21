@@ -41,53 +41,45 @@ export const homeGsap = () => {
       scrollTrigger: {
         trigger: "#home",
         pin: true,
-        start: "top top",
-        scrub: 0.5,
+        start: "90% 20%",
+        end: "bottom 20%",
+        scrub: 1,
       },
     });
     timeline2
-      .to(".arrow-container.animated.fadeInDown", {
-        opacity: 0,
-        duration: 1,
-      })
-      .fromTo(
-        ".about-inner",
-        { y: "0%", opacity: 1 },
-        { y: "-100%", duration: 5, ease: Linear.easeInOut, opacity: 0 }
-      )
-      .fromTo(
-        ".image-1",
-        { y: "0", opacity: 1 },
-        { y: "-100%", duration: 5, ease: Linear.easeInOut, opacity: 0 },
-        "<"
-      )
-      .fromTo(
-        ".about-2-inner",
-        { y: "0", opacity: 0 },
-        { y: "-100%", duration: 3, ease: Linear.easeInOut, opacity: 1 }
-      )
-      .fromTo(
-        ".image-2",
-        { y: "100%", opacity: 0 },
-        { y: "0%", duration: 3, ease: Linear.easeInOut, opacity: 1 },
-        "<"
-      )
+      .fromTo(".arrow-container.animated.fadeInDown", {
+        opacity: 1,
+      }, {opacity: 0})
       .set(
         "nav",
         {
           background: "rgb(35, 35, 35)",
           boxShadow: "rgb(0 0 0 / 5%) 0px 3px 3px",
-          duration: 0,
-          delay: 0
         },
+        '>'
       )
-      .from(
-        "#projects",
-        {
-          y: "0%",
-          duration: 0,
-          delay: 0
-        },
-      )
+      // .fromTo(
+      //   ".about-inner",
+      //   { y: "0%", opacity: 1 },
+      //   { y: "-100%", duration: 5, ease: Linear.easeInOut, opacity: 0 }
+      // )
+      // .fromTo(
+      //   ".image-1",
+      //   { y: "0", opacity: 1 },
+      //   { y: "-100%", duration: 5, ease: Linear.easeInOut, opacity: 0 },
+      //   "<"
+      // )
+      // .fromTo(
+      //   ".about-2-inner",
+      //   { y: "0", opacity: 0 },
+      //   { y: "-100%", duration: 3, ease: Linear.easeInOut, opacity: 1 }
+      // )
+      // .fromTo(
+      //   ".image-2",
+      //   { y: "100%", opacity: 0 },
+      //   { y: "0%", duration: 3, ease: Linear.easeInOut, opacity: 1 },
+      //   "<"
+      // )
+
   }
 };

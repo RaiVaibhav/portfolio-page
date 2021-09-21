@@ -31,7 +31,7 @@
   display: none;
   grid-template-columns: 50% 50%;
   align-items: center;
-  height: 100vh;
+  // height: 100vh;
   width: 100%;
   z-index: 2;
 }
@@ -103,7 +103,7 @@
   width: 100%;
   img {
     max-width: 40vw;
-    position: absolute;
+    // position: absolute;
     display: block;
     width: 100%;
   }
@@ -127,6 +127,8 @@
 }
 
 .loading-wrapper {
+  width: 100%;
+    display: flex;
   @keyframes spinner {
     to {transform: rotate(360deg);}
   }
@@ -278,4 +280,36 @@ iframe {
 .icon-hover:hover {
   transform: scale(1.05);
     transition: all 0.2s ease 0s;
+}
+
+.fade-in-project-card {
+  animation: fadeIn 5s;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
+}
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
 }

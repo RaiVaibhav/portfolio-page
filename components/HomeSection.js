@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import image1 from "../public/image1.webp";
-import image2 from "../public/image2.webp";
 import { homeGsap } from "../utils/homeGsap";
 
 
@@ -13,7 +12,7 @@ export const HomeSection = () => {
     SetIsLoaded(true);
   }, []);
   return (
-    <section id="home">
+    <section id="home" className="flex">
       <div className={`loading-wrapper ${isLoaded ? "" : "spinner"}`}>
         <div className="arrow-container animated fadeInDown">
           <div className="arrow-2">
@@ -44,7 +43,6 @@ export const HomeSection = () => {
               </div>
               <div className="about">
                 <div className="about-inner">Frontend Developer</div>
-                <div className="about-2-inner">Passionate trekkie</div>
               </div>
             </div>
           </div>
@@ -53,11 +51,6 @@ export const HomeSection = () => {
               src={image1.src}
               className="image-1"
               alt="animated vaibhav image"
-            />
-            <img
-              src={image2.src}
-              className="image-2"
-              alt="vaibhav image after scroll"
             />
           </div>
         </div>

@@ -32,10 +32,8 @@ export default function Home() {
       </Head>
       <NavBar />
 
-      <div id="main">
         <HomeSection />
         <ProjectSection />
-      </div>
     </>
   );
 }

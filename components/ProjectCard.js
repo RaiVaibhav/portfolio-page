@@ -3,7 +3,7 @@ import { ProjectSkills } from "./skillsIcons";
 import ProjectIframe from "./projectIFrame";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const ProjectCard = ({
+const ProjectCard = React.forwardRef(({
   src,
   heading,
   subheading,
@@ -12,9 +12,9 @@ const ProjectCard = ({
   referLink,
   referText,
   githubLink,
-}) => {
+}, ref) => {
   return (
-    <div className="flex mb-16 pb-12 pl-12 pr-12 pt-4 grid-gap-4 project-card-bg-color flex-col xl:flex-row flex-wrap shadow-2xl flex-1 card-height container mx-auto shadow-lg rounded-md justify-center">
+    <div ref={ref} className="flex mb-16 pb-12 pl-12 pr-12 pt-4 grid-gap-4 project-card-bg-color flex-col xl:flex-row flex-wrap shadow-2xl flex-1 card-height container mx-auto shadow-lg rounded-md justify-center">
       <div className="flex justify-items-end flex-col flex-1">
         <div className="flex-1 flex flex-col items-start pb-4 xl:pb-0 xl:text-left pt-4">
           <ProjectSkills skills={skills} />
@@ -53,7 +53,9 @@ const ProjectCard = ({
       <ProjectIframe src={src} />
     </div>
   );
-};
+});
+
+ProjectCard.displayName = "ProjectCard";
 
 export default React.memo(
   ProjectCard,
