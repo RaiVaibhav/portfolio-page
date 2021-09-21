@@ -39,10 +39,10 @@ export const homeGsap = () => {
       );
     let timeline2 = gsap.timeline({
       scrollTrigger: {
-        trigger: "#main",
+        trigger: "#home",
         pin: true,
         start: "top top",
-        scrub: true,
+        scrub: 0.5,
       },
     });
     timeline2
