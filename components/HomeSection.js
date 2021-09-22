@@ -42,7 +42,7 @@ export const HomeSection = () => {
           <div className="title">
             <div className="title-inner flex flex-col gap-2">
               <div className="cafe sm:text-3xl lg:text-4xl">
-                <div className="cafe-inner ">Hello, I am Vaibhav</div>
+                <div className="cafe-inner ">Hi, I am Vaibhav</div>
               </div>
               <div className="about sm:text-4xl lg:text-5xl">
                 <div className="about-inner">A Frontend Developer</div>

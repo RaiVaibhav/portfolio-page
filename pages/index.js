@@ -3,6 +3,7 @@ import Head from "next/head";
 import { NavBar } from "../components/NavBar";
 import { HomeSection } from "../components/HomeSection";
 import { ProjectSection } from "../components/projectsSection";
+import  AboutMeSection from "../components/aboutMeSection";
 
 export default function Home() {
   return (
@@ -31,8 +32,8 @@ export default function Home() {
         />
       </Head>
       <NavBar />
-
         <HomeSection />
+        <AboutMeSection />
         <ProjectSection />
     </>
   );

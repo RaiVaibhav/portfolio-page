@@ -3,6 +3,7 @@ import { ProjectSkills } from "./skillsIcons";
 import ProjectIframe from "./projectIFrame";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useInView } from "react-intersection-observer";
+import Card from "./Card";
 
 const ProjectCard = ({
   src,
@@ -14,18 +15,8 @@ const ProjectCard = ({
   referText,
   githubLink,
 }) => {
-  const [fadeClass, SetFadeClass ] = useState('opacity-0');
-  let [ref, inView] = useInView({
-    threshold: 0.2,
-    triggerOnce: true,
-  });
-  useEffect(() => {
-    if(inView) {
-      SetFadeClass('fade-in-project-card');
-    }
-  }, [inView])
   return (
-    <div ref={ref} className={`flex mb-16 pb-12 pl-12 pr-12 pt-4 grid-gap-4 project-card-bg-color flex-col xl:flex-row flex-wrap shadow-2xl flex-1 card-height container shadow-lg rounded-md justify-center ${fadeClass}`}>
+    <Card >
       <div className="flex justify-items-end flex-col flex-1">
         <div className="flex-1 flex flex-col items-start pb-4 xl:pb-0 xl:text-left pt-4">
           <ProjectSkills skills={skills} />
@@ -62,7 +53,7 @@ const ProjectCard = ({
       </div>
 
       <ProjectIframe src={src} />
-    </div>
+    </Card>
   );
 };
 

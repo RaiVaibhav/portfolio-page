@@ -32,7 +32,8 @@ html {
 }
 
 body {
-  background: rgb(41 41 41);
+  /* background: rgb(41 41 41); */
+  background-color: rgb(61 61 61) !important;
 }
 
 section {
