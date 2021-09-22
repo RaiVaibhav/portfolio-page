@@ -13,7 +13,7 @@ const Card = ({ children, className }) => {
     }
   }, [inView])
   return (
-    <div ref={ref} className={`flex mb-16 p-8 sm:p-12 grid-gap-4 project-card-bg-color flex-col xl:flex-row flex-wrap shadow-2xl flex-1 card-height container shadow-lg rounded-md justify-center ${className || ''} ${fadeClass}`}>
+    <div ref={ref} className={`flex mb-16 p-8 sm:p-12 grid-gap-4 project-card-bg-color flex-col xl:flex-row flex-wrap shadow-2xl flex-1 card-height shadow-lg sm:rounded-md justify-center ${className || ''} ${fadeClass}`}>
       {children}
     </div>
   );

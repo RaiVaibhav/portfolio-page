@@ -18,7 +18,7 @@ const ProjectCard = ({
   return (
     <Card >
       <div className="flex justify-items-end flex-col flex-1">
-        <div className="flex-1 flex flex-col items-start pb-4 xl:pb-0 xl:text-left pt-4">
+        <div className="flex-1 flex flex-col items-start pb-4 xl:pb-8 xl:text-left pt-4">
           <ProjectSkills skills={skills} />
           {heading && (
             <div className="text-2xl lg:text-3xl font-bold pb-2">

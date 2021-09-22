@@ -8,7 +8,13 @@ let data = [
     referText: "Visit Page",
     skills: ["react", "css3", "html5", "python"],
     description:
-      "Working as a Front-End Engineer on the Klinify web dashboard which helps clinics in augmenting their traditional consult services to patients. As a team member, my work includes developing the demanded feature like drug to drug iteraction checker, handle the web app performance and fixing it, integration testing and maintain the release cycle.",
+      "Working as a Front-End Engineer on the Klinify web dashboard which \
+      helps clinics in augmenting their traditional consult services to patients. \
+      As a team member, I was working on the web app performance fixes like lazy \
+      loading, pagination, tree shaking, and after a proposal, we mandated this \
+      pattern in the technical specification of any project i.e., integrating these \
+      patterns as a shared functionality across the platform included integration testing and \
+      maintain the release cycle and developing the demanded feature.",
   },
   {
     heading: "CSS Only Art Gallery",
@@ -52,7 +58,7 @@ let data = [
     src: "https://projects.coala.io/GSoC/2018/StatusReport/RaiVaibhav",
     skills: ["python"],
     description:
-      "The aim was to create better quality Bears (analyzers) by creating a tool that has the ability to jump directly into Bear code and move through it using a debugger interface. I learned about the pdb, single thread, coverage, mock tests and lastly how awesome open source community is.",
+      "The aim was to create better quality Bears (analyzers) by creating a tool that has the ability to jump directly into Bear code and move through it using a debugger interface. Every programming language follows some pattern or a design pattern that they recommend to prevent any complexity and future bugs, for the case of javascript you can say eslint, for python say pep8, but Coala works for every language, which means coala is a global wrapper but what if you are a developer at coala and you want to debug that wrapper without opening the GitHub code on various browser tabs, there have to be some medium to debug the coala wrapper",
   },
 ];
 
