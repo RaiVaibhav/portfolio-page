@@ -169,8 +169,8 @@
 }
 
 .arrow-container{
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
   margin: 0 auto;
   position: absolute;
   bottom: 25px;
@@ -180,8 +180,8 @@
 }
 
 .arrow-1{
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
   background: #8c8888;
   opacity: 0.5;
   border-radius: 50%;
@@ -189,27 +189,6 @@
   opacity: 0.7;
 }
 
-.arrow-2{
-  width: 60px;
-  height: 60px;
-  background: #525050;
-  border-radius: 50%;
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  z-index: 1;
-  display: table;
-  opacity: 0.7;
-}
-
-
-.arrow-2 i.fa{
-  font-size: 30px;
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
-  color: #006064;
-}
 
 .animated.hinge {
   -webkit-animation-duration: 2s;
@@ -253,6 +232,7 @@
 }
 
 .angle-down {
+  position: absolute;
   height: 30px;
   width: 30px;
   left: 15px;
@@ -283,11 +263,11 @@ iframe {
 }
 
 .fade-in-project-card {
-  animation: fadeIn 2s;
-  -webkit-animation: fadeIn 2s;
-  -moz-animation: fadeIn 2s;
-  -o-animation: fadeIn 2s;
-  -ms-animation: fadeIn 2s;
+  animation: fadeIn 1s;
+  -webkit-animation: fadeIn 1s;
+  -moz-animation: fadeIn 1s;
+  -o-animation: fadeIn 1s;
+  -ms-animation: fadeIn 1s;
 }
 @keyframes fadeIn {
   0% {opacity:0;}

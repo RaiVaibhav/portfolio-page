@@ -7,14 +7,15 @@ let data = [
     referLink: "https://klinify.com/",
     referText: "Visit Page",
     skills: ["react", "css3", "html5", "python"],
-    description:
-      "Working as a Front-End Engineer on the Klinify web dashboard which \
-      helps clinics in augmenting their traditional consult services to patients. \
-      As a team member, I was working on the web app performance fixes like lazy \
-      loading, pagination, tree shaking, and after a proposal, we mandated this \
-      pattern in the technical specification of any project i.e., integrating these \
-      patterns as a shared functionality across the platform included integration testing and \
-      maintain the release cycle and developing the demanded feature.",
+    description:"Working as a Front-End Engineer on the Klinify \
+    web dashboard which helps clinics in augmenting their traditional \
+    consult services to patients. As a team member, I was working on \
+    the web app performance fixes like lazy loading, pagination, tree \
+    shaking, and after a proposal, we mandated this pattern in the \
+    technical specification of any project i.e., integrating these patterns \
+    as a shared functionality across the platform, additionally, my work \
+    included integration testing and maintain the release cycle and developing \
+    the demanded feature.",
   },
   {
     heading: "CSS Only Art Gallery",
@@ -24,7 +25,8 @@ let data = [
     src: "https://codepen.io/raivaibhav/embed/WNjaqOw?default-tab:result",
     skills: ["css3", "html5"],
     description:
-      "A CSS only art gallery, it helped me in deep diving into how transform, keyframes work into the css and the how powerfull css is.",
+      "A CSS only art gallery, it helped me in deep diving into how transform, \
+      keyframes work into the css and the how powerfull css is.",
   },
   {
     heading: "Tihatsu",
@@ -35,7 +37,12 @@ let data = [
     skills: ["react", "css3", "html5", "python"],
     githubLink: "https://github.com/RaiVaibhav/tishatsu-nftvisionhack",
     description:
-      "Tishatsu is a collection of cool new age T-shirts on blockchain and vision was to become a faishon label in Metaverse, this project was proposed for the NFTVision Hackathon by team tihatsu and backend is build on Django where client side generate the bird logo using p5.js then using the generated t-shirt pattern from backend, it combines both using fabricjs which later set as a t-shirt background.",
+      "Tishatsu is a collection of cool new age T-shirts on blockchain and \
+      vision was to become a faishon label in Metaverse, this project was \
+      proposed for the NFTVision Hackathon by team tihatsu and backend is build \
+      on Django where client side generate the bird logo using p5.js then using the \
+      generated t-shirt pattern from backend, it combines both using fabricjs which \
+      later set as a t-shirt background.",
   },
   {
     key: "card-1",
@@ -46,7 +53,11 @@ let data = [
     src: "https://fast.wistia.net/embed/iframe/j2q5f8eew8?videoFoam:true",
     skills: ["react", "node", "html5", "css3"],
     description:
-      "As a intern my work included features like bidirectional syncing of slack chat with chat platform of Squadcast for the continuous update, adding enzyme tests of the entire front-end platform, writing the serverless and kubeless function as the microservice, and setting up the artifactory for the private npm package.",
+      "As a intern my work included features like bidirectional syncing of slack \
+      chat with chat platform of Squadcast for the continuous update, adding \
+      enzyme tests of the entire front-end platform, writing the serverless \
+      and kubeless function as the microservice, and setting up the artifactory \
+      for the private npm package.",
   },
   {
     heading: "GSOC",
@@ -58,7 +69,15 @@ let data = [
     src: "https://projects.coala.io/GSoC/2018/StatusReport/RaiVaibhav",
     skills: ["python"],
     description:
-      "The aim was to create better quality Bears (analyzers) by creating a tool that has the ability to jump directly into Bear code and move through it using a debugger interface. Every programming language follows some pattern or a design pattern that they recommend to prevent any complexity and future bugs, for the case of javascript you can say eslint, for python say pep8, but Coala works for every language, which means coala is a global wrapper but what if you are a developer at coala and you want to debug that wrapper without opening the GitHub code on various browser tabs, there have to be some medium to debug the coala wrapper",
+      "The aim was to create better quality Bears (analyzers) by creating a tool \
+      that has the ability to jump directly into Bear code and move through it \
+      using a debugger interface. Every programming language follows some pattern \
+      or a design pattern that they recommend to prevent any complexity and future \
+      bugs, for the case of javascript you can say eslint, for python say pep8, but \
+      Coala works for every language, which means coala is a global wrapper but what \
+      if you are a developer at coala and you want to debug that wrapper without \
+      opening the GitHub code on various browser tabs, there have to be some \
+      medium to debug the coala wrapper.",
   },
 ];
 

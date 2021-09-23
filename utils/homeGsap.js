@@ -53,6 +53,13 @@ export const homeGsap = () => {
           background: "rgb(35, 35, 35)",
           boxShadow: "rgb(0 0 0 / 5%) 0px 3px 3px",
         },
+      )
+      .to(
+        ".arrow-container",
+        {
+          visibility: 'hidden',
+        },
+        '<'
       );
   }
 };

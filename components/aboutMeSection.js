@@ -4,7 +4,7 @@ import Card from "./Card";
 export default function AboutMeSection() {
   return (
     <section id="aboutme" className="flex flex-col h-full">
-      <h1 className="self-center text-3xl lg:text-4xl my-16 pt-0 font-bold">
+      <h1 className="self-center text-3xl lg:text-4xl my-4 sm:my-8 xl:my-16 pt-0 font-bold">
         About Me
       </h1>
       <div className="px-0 pt-4 sm:px-8 lg:px-32">
@@ -16,11 +16,13 @@ export default function AboutMeSection() {
             source projects. I like to break things to make them better and
             performant.
           </p>
-          <div className="flex flex-wrap flex-row justify-between sm:justify-center pt-12 gap-12 text-gray-500">
-            <FontAwesomeIcon icon={["fab", "react"]} size="3x" />
-            <FontAwesomeIcon icon={["fab", "js"]} size="3x" />
-            <FontAwesomeIcon icon={["fab", "html5"]} size="3x" />
-            <FontAwesomeIcon icon={["fab", "css3"]} size="3x" />
+          <div className="flex justify-center">
+            <div className="grid grid-rows-1 grid-cols-4 justify-between sm:justify-center pt-12 gap-8 sm:gap-16 text-gray-500">
+              <FontAwesomeIcon icon={["fab", "react"]} size="3x" />
+              <FontAwesomeIcon icon={["fab", "js"]} size="3x" />
+              <FontAwesomeIcon icon={["fab", "html5"]} size="3x" />
+              <FontAwesomeIcon icon={["fab", "css3"]} size="3x" />
+            </div>
           </div>
         </Card>
       </div>

@@ -13,8 +13,7 @@ export const HomeSection = () => {
   return (
     <section id="home" className="flex">
       <div className={`loading-wrapper ${isLoaded ? "" : "spinner"}`}>
-        <div className="arrow-container animated fadeInDown">
-          <div className="arrow-2">
+        <div className="arrow-container animated fadeInDown h-6 w-6">
             <svg
               aria-hidden="true"
               focusable="false"
@@ -30,7 +29,6 @@ export const HomeSection = () => {
                 d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"
               ></path>
             </svg>
-          </div>
           <div className="arrow-1 animated hinge infinite zoomIn"></div>
         </div>
 
