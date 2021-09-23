@@ -18,23 +18,20 @@ function ProjectIframe({ src }) {
   return (
     <div className="flex-1 lg:flex-2 iframe flex" ref={ref}>
       <iframe
-        className="rounded-md"
         title={src}
-        style={{ opacity: isLoading ? "0" : "1" }}
+        className={`rounded-md ${isLoading && "invisible"}`}
         src={frameSrc}
         onLoad={() => {
-          // on viewport change onLoad will gets called again but check if
-          // it's already loaded then prevent the state render
           if (isLoading) {
-            SetisLoading(!isLoading)
+            setTimeout(() => SetisLoading(!isLoading), 1000)
+            
           }
         }}
         frameBorder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope"
         allowFullScreen
       />
-      {isLoading && (
-        <div className="bg-gray-100 w-full h-full absolute flex items-center justify-center rounded-md">
+        <div className={`bg-gray-100 w-full h-full absolute flex items-center justify-center rounded-md ${isLoading ? 'visible' : 'invisible'}`}>
           <svg
             className="h-16 w-16"
             version="1.1"
@@ -62,7 +59,7 @@ function ProjectIframe({ src }) {
                 attributeName="transform"
                 attributeType="XML"
                 type="rotate"
-                dur="2s"
+                dur="1s"
                 from="0 50 50"
                 to="360 50 50"
                 repeatCount="indefinite"
@@ -92,7 +89,7 @@ function ProjectIframe({ src }) {
                 attributeName="transform"
                 attributeType="XML"
                 type="rotate"
-                dur="2s"
+                dur="1s"
                 from="0 50 50"
                 to="360 50 50"
                 repeatCount="indefinite"
@@ -102,7 +99,7 @@ function ProjectIframe({ src }) {
 
           {/* <div className="animated-background" /> */}
         </div>
-      )}
+      )
     </div>
   );
 }

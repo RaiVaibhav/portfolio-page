@@ -4,10 +4,10 @@ import Card from "./Card";
 export default function AboutMeSection() {
   return (
     <section id="aboutme" className="flex flex-col h-full">
-      <h1 className="self-center text-3xl lg:text-4xl my-4 sm:my-8 xl:my-16 pt-0 font-bold">
+      <h1 className="self-center text-3xl lg:text-4xl xl:text-5xl py-12 font-bold mt-4 sm:mt-8 xl:mt-16 pt-0 font-bold">
         About Me
       </h1>
-      <div className="px-0 pt-4 sm:px-8 lg:px-32">
+      <div className="px-0 sm:px-8 lg:px-32">
         <Card className="mb-0">
           <p className="text-start lg:text-center lg:mx-24">
             Hi, I am Vaibhav, a passionate Frontend and an unoriented language

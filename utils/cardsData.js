@@ -26,7 +26,18 @@ let data = [
     skills: ["css3", "html5"],
     description:
       "A CSS only art gallery, it helped me in deep diving into how transform, \
-      keyframes work into the css and the how powerfull css is.",
+      gradient work into the css and the how powerfull css is.",
+  },
+  {
+    heading: "CSS Only Chessboard",
+    key: "css-chess-board",
+    referLink: "https://codepen.io/raivaibhav/pen/WNjaqOw",
+    referText: "Visit Demo",
+    src: "https://codepen.io/raivaibhav/embed/YzVvWxG?default-tab=result",
+    skills: ["css3", "html5"],
+    description:
+      "A CSS chessboard, it helped me in deep diving into how transform, \
+      keyframes and animation work into the css and how easily we can animate our thinking and express it.",
   },
   {
     heading: "Tihatsu",
