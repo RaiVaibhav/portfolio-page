@@ -11,10 +11,9 @@ export default function AboutMeSection() {
         <Card className="mb-0">
           <p className="text-start lg:text-center lg:mx-24">
             Hi, I am Vaibhav, a passionate Frontend and an unoriented language
-            programmer. Currently working as a Frontend Developer at Klinify. I
-            spend my time understanding the code of the various enjoyable open
+            programmer. I spend my time understanding the code of the various enjoyable open
             source projects. I like to break things to make them better and
-            performant.
+            performant. My hooby also includes paragliding, mountaineering and travelling.
           </p>
           <div className="flex justify-center">
             <div className="grid grid-rows-1 grid-cols-4 justify-between sm:justify-center pt-12 gap-8 sm:gap-16 text-gray-500">
