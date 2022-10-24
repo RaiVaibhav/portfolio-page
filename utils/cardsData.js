@@ -21,7 +21,7 @@ let data = [
     heading: "CSS Only Art Gallery",
     key: "card-4",
     referLink: "https://codepen.io/raivaibhav/pen/WNjaqOw",
-    referText: "Visit Demo",
+    referText: "Visit Code",
     src: "https://codepen.io/raivaibhav/embed/WNjaqOw?default-tab:result",
     skills: ["css3", "html5"],
     description:
@@ -29,15 +29,14 @@ let data = [
       gradient work into the css and the how powerfull css is.",
   },
   {
-    heading: "CSS Only Chessboard",
-    key: "css-chess-board",
-    referLink: "https://codepen.io/raivaibhav/pen/WNjaqOw",
-    referText: "Visit Demo",
-    src: "https://codepen.io/raivaibhav/embed/YzVvWxG?default-tab=result",
+    heading: "CSS Only Watter Ripple Effect",
+    key: "card-5",
+    referLink: "https://codepen.io/raivaibhav/pen/PoaYzKw",
+    referText: "Visit Code",
+    src: "https://codepen.io/raivaibhav/embed/PoaYzKw?default-tab=result",
     skills: ["css3", "html5"],
     description:
-      "A CSS chessboard, it helped me in deep diving into how transform, \
-      keyframes and animation work into the css and how easily we can animate our thinking and express it.",
+      "A CSS only water ripple effect, it helped me undertstand about the animation keyframe",
   },
   {
     heading: "Tihatsu",
