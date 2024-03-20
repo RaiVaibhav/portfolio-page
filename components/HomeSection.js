@@ -47,7 +47,7 @@ export const HomeSection = () => {
               </div>
               <div className="flex my-1 mx-1 opacity-0 resume">
                 <a
-                  href="http://bit.ly/3xUSEF"
+                  href="https://docs.google.com/document/d/1v-KYEXOLQV6cuoXLP1qnVAGuj-mcqkeMD5t-SvV3Wm8/edit?usp=sharing"
                   className="gradient-b hover:bg-gray-700 p-2 text-xs md:text-base text-center rounded-md icon-hover sm:opacity-80"
                   target="_blank"
                   rel="noreferrer"

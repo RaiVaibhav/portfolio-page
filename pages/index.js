@@ -12,11 +12,11 @@ export default function Home() {
         <meta charSet="utf-8" />
         <title>Vaibhav Rai</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Hello, I am a Frontend Developer" />
+        <meta name="description" content="Hi, I am a Frontend Developer" />
         <meta property="og:title" content="Vaibhav" />
         <meta
           property="og:description"
-          content="Hello, I am a Frontend Developer"
+          content="Hi, I am a Senior Frontend Developer"
         />
         <meta
           property="og:image"
