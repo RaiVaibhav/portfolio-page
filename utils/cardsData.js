@@ -29,14 +29,16 @@ let data = [
       gradient work into the css and the how powerfull css is.",
   },
   {
-    heading: "CSS Only Watter Ripple Effect",
+    heading: "CSS Only Home Camera",
     key: "card-5",
-    referLink: "https://codepen.io/raivaibhav/pen/PoaYzKw",
+    referLink: "https://codepen.io/raivaibhav/pen/yLGVQQg",
     referText: "Visit Code",
-    src: "https://codepen.io/raivaibhav/embed/PoaYzKw?default-tab=result",
+    src: "https://codepen.io/raivaibhav/embed/yLGVQQg?default-tab:result",
     skills: ["css3", "html5"],
     description:
-      "A CSS only water ripple effect, it helped me undertstand about the animation keyframe",
+      "A CSS only art gallery, it helped me in deep diving into how can I mix \
+      multiple places to give 3D view, in the image below red is the outline of multiple planes",
+    suffixImage: "https://pbs.twimg.com/media/F5qhPd8W8AA1n8i?format=jpg&name=small"
   },
   {
     heading: "Tihatsu",

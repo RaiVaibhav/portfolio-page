@@ -2,10 +2,34 @@ import React, { useEffect, useState } from "react";
 import { ProjectSkills } from "./skillsIcons";
 import ProjectIframe from "./projectIFrame";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useInView } from "react-intersection-observer";
 import Card from "./Card";
+import Image from "next/image";
 
+const CardActions = ({ referLink, referText, githubLink, className = '' }) => {
+  if (!referLink) {
+    return;
+  }
+  return (
+    <div className={`flex grid-gap-2 ${className}`} >
+      <a
+        href={referLink}
+        className="flex py-2 px-4 text-md text-center bg-gray-600 rounded-md icon-hover"
+      >
+        {referText}
+      </a>
+      {githubLink && (
+        <a
+          href={githubLink}
+          className="flex py-2 px-3 text-md text-center bg-gray-600 rounded-md icon-hover items-center"
+        >
+          <FontAwesomeIcon icon={["fab", "github"]} />
+        </a>
+      )}
+    </div>
+  );
+};
 const ProjectCard = ({
+  key,
   src,
   heading,
   subheading,
@@ -14,9 +38,10 @@ const ProjectCard = ({
   referLink,
   referText,
   githubLink,
+  suffixImage
 }) => {
   return (
-    <Card >
+    <Card>
       <div className="flex justify-items-end flex-col flex-1">
         <div className="flex-1 flex flex-col items-start pb-4 xl:pb-8 xl:text-left pt-4">
           <ProjectSkills skills={skills} />
@@ -31,28 +56,32 @@ const ProjectCard = ({
             </div>
           )}
           {description && <div>{description}</div>}
+          <br />
+          {suffixImage && (
+            <Image
+              className="rounded-md"
+              width={300}
+              height={200}
+              src={suffixImage}
+              alt="suffix"
+            />
+          )}
         </div>
-        {referLink && (
-          <div className="flex grid-gap-2">
-            <a
-              href={referLink}
-              className="flex py-2 px-4 text-md text-center bg-gray-600 rounded-md icon-hover"
-            >
-              {referText}
-            </a>
-            {githubLink && (
-              <a
-                href={githubLink}
-                className="flex py-2 px-3 text-md text-center bg-gray-600 rounded-md icon-hover items-center"
-              >
-                <FontAwesomeIcon icon={["fab", "github"]}/>
-              </a>
-            )}
-          </div>
-        )}
+        <CardActions
+          referLink={referLink}
+          referText={referText}
+          githubLink={githubLink}
+          className="hidden xl:flex"
+        />
       </div>
 
-      <ProjectIframe src={src} />
+      <ProjectIframe src={src} key={key} />
+      <CardActions
+        referLink={referLink}
+        referText={referText}
+        githubLink={githubLink}
+        className="xl:hidden pt-2"
+      />
     </Card>
   );
 };

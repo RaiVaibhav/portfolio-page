@@ -6,7 +6,6 @@ export const homeGsap = () => {
     gsap.registerPlugin(ScrollTrigger);
     let timeline1 = gsap.timeline();
     timeline1
-      .set(".title-inner", { x: "100%", delay: 0.3 })
       .fromTo(
         ".title-inner",
         {
@@ -17,16 +16,10 @@ export const homeGsap = () => {
           duration: 1,
         }
       )
-      .fromTo(
-        ".title-inner",
-        {
-          x: "100%",
-        },
-        {
-          x: "0%",
-          duration: 1,
-        }
-      )
+
+      .to(".resume", { opacity: 1, ease: Linear.easeIn });
+    let timeline3 = gsap.timeline();
+    timeline3
       .fromTo(
         ".home-content-image img",
         {
@@ -36,7 +29,7 @@ export const homeGsap = () => {
           clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
           duration: 1,
         }
-      ).to(".resume", { opacity: 1, ease: Linear.easeIn})
+      )
     let timeline2 = gsap.timeline({
       scrollTrigger: {
         trigger: "#home",
@@ -47,19 +40,16 @@ export const homeGsap = () => {
       },
     });
     timeline2
-      .to(
-        "nav",
-        {
-          background: "rgb(35, 35, 35)",
-          boxShadow: "rgb(0 0 0 / 5%) 0px 3px 3px",
-        },
-      )
+      .to("nav", {
+        background: "rgb(35, 35, 35)",
+        boxShadow: "rgb(0 0 0 / 5%) 0px 3px 3px",
+      })
       .to(
         ".arrow-container",
         {
-          visibility: 'hidden',
+          visibility: "hidden",
         },
-        '<'
+        "<"
       );
   }
 };

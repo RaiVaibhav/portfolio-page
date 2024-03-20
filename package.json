@@ -14,16 +14,16 @@
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.15",
     "gsap": "^3.7.1",
-    "next": "11.1.2",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
+    "next": "^14.1.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-intersection-observer": "^8.32.1",
     "sass": "^1.41.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.3.4",
     "eslint": "7.32.0",
-    "eslint-config-next": "11.1.2",
+    "eslint-config-next": "^14.1.4",
     "postcss": "^8.3.6",
     "tailwindcss": "^2.2.15"
   }
