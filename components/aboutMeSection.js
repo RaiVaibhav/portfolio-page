@@ -13,7 +13,7 @@ export default function AboutMeSection() {
             Hi, I am Vaibhav, a passionate Frontend and an unoriented language
             programmer. I spend my time understanding the code of the various enjoyable open
             source projects. I like to break things to make them better and
-            performant. My hooby also includes paragliding, mountaineering and travelling.
+            performant. My hobby also includes paragliding, mountaineering and travelling.
           </p>
           <div className="flex justify-center">
             <div className="grid grid-rows-1 grid-cols-4 justify-between sm:justify-center pt-12 gap-8 sm:gap-16 text-gray-500">
