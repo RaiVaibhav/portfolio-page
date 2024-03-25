@@ -29,7 +29,6 @@ const CardActions = ({ referLink, referText, githubLink, className = '' }) => {
   );
 };
 const ProjectCard = ({
-  key,
   src,
   heading,
   subheading,
@@ -75,7 +74,7 @@ const ProjectCard = ({
         />
       </div>
 
-      <ProjectIframe src={src} key={key} />
+      <ProjectIframe src={src} />
       <CardActions
         referLink={referLink}
         referText={referText}

@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import image2 from "../public/image2.webp";
 import { homeGsap } from "../utils/homeGsap";
+import Image from 'next/image'
 
 export const HomeSection = () => {
   let [isLoaded, SetIsLoaded] = useState(false);
@@ -58,8 +59,12 @@ export const HomeSection = () => {
             </div>
           </div>
           <div className="home-content-image">
-            <img
+            <Image
               src={image2.src}
+              layout='fill'
+              objectFit='contain'
+              placeholder="blur"
+              blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPcuGaNJwAGcwJUoyyo3wAAAABJRU5ErkJggg=="
               className="image-1"
               alt="animated vaibhav image"
             />
