@@ -13,6 +13,7 @@ const CardActions = ({ referLink, referText, githubLink, className = '' }) => {
     <div className={`flex grid-gap-2 ${className}`} >
       <a
         href={referLink}
+        aria-label="visit-page"
         className="flex py-2 px-4 text-md text-center bg-gray-600 rounded-md icon-hover"
       >
         {referText}
@@ -20,6 +21,7 @@ const CardActions = ({ referLink, referText, githubLink, className = '' }) => {
       {githubLink && (
         <a
           href={githubLink}
+          aria-label="visit-github"
           className="flex py-2 px-3 text-md text-center bg-gray-600 rounded-md icon-hover items-center"
         >
           <FontAwesomeIcon icon={["fab", "github"]} />

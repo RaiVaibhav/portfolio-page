@@ -2,19 +2,19 @@
 
 import { useEffect, useState } from "react";
 import image2 from "../public/image2.webp";
-import { homeGsap } from "../utils/homeGsap";
-import Image from 'next/image'
+import Image from "next/image";
+import { useScrollOnY } from "../utils/useOnScrollY";
 
 export const HomeSection = () => {
   let [isLoaded, SetIsLoaded] = useState(false);
+  const isScrolledDown = useScrollOnY();
   useEffect(() => {
-    homeGsap();
     SetIsLoaded(true);
   }, []);
   return (
     <section id="home" className="flex">
       <div className={`loading-wrapper ${isLoaded ? "" : "spinner"}`}>
-        <div className="arrow-container animated fadeInDown h-6 w-6">
+        <div className={`arrow-container animated fadeInDown h-6 w-6 ${isScrolledDown ? 'invisible': 'visible'}`}>
           <svg
             aria-hidden="true"
             focusable="false"
@@ -61,8 +61,8 @@ export const HomeSection = () => {
           <div className="home-content-image">
             <Image
               src={image2.src}
-              layout='fill'
-              objectFit='contain'
+              layout="fill"
+              objectFit="contain"
               placeholder="blur"
               blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPcuGaNJwAGcwJUoyyo3wAAAABJRU5ErkJggg=="
               className="image-1"

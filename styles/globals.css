@@ -52,6 +52,12 @@ nav {
   width: 100%;
   display: flex;
   justify-content: space-between;
+
+}
+
+.nav-scrolled-bg {
+  background: rgb(35, 35, 35);
+  box-shadow: rgb(0 0 0 / 5%) 0px 3px 3px;
 }
 
 @layer utilities {
