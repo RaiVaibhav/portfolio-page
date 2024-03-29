@@ -63,10 +63,9 @@ export const HomeSection = () => {
               src={image2.src}
               layout="fill"
               objectFit="contain"
-              placeholder="blur"
-              blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPcuGaNJwAGcwJUoyyo3wAAAABJRU5ErkJggg=="
               className="image-1"
               alt="animated vaibhav image"
+              priority
             />
           </div>
         </div>
