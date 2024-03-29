@@ -64,8 +64,7 @@ export const HomeSection = () => {
               style={{ objectFit: 'contain'}}
               width={500}
               height={500}
-              placeholder="blur"
-              blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPcuGaNJwAGcwJUoyyo3wAAAABJRU5ErkJggg=="
+              priority
               className="image-1"
               alt="animated vaibhav image"
             />
