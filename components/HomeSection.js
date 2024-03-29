@@ -61,11 +61,13 @@ export const HomeSection = () => {
           <div className="home-content-image">
             <Image
               src={image2.src}
-              layout="fill"
-              objectFit="contain"
+              style={{ objectFit: 'contain'}}
+              width={500}
+              height={500}
+              placeholder="blur"
+              blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPcuGaNJwAGcwJUoyyo3wAAAABJRU5ErkJggg=="
               className="image-1"
               alt="animated vaibhav image"
-              priority
             />
           </div>
         </div>
