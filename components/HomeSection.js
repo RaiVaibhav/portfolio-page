@@ -59,15 +59,16 @@ export const HomeSection = () => {
             </div>
           </div>
           <div className="home-content-image">
+            <div className="image-1">
+            </div>
             <Image
-              src={image2.src}
-              style={{ objectFit: 'contain'}}
-              width={500}
-              height={500}
-              priority
-              className="image-1"
-              alt="animated vaibhav image"
-            />
+                src={image2.src}
+                style={{ objectFit:'contain'}}
+                width={500}
+                height={500}
+                priority
+                alt="animated vaibhav image"
+              />
           </div>
         </div>
       </div>

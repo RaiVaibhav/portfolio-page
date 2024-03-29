@@ -92,7 +92,6 @@
 .home-content-image {
   overflow-y: hidden;
   display: flex;
-  align-items: center;
   justify-content: flex-end;
   grid-row: 1;
   grid-column: 2;
@@ -225,6 +224,30 @@
   100% {
     opacity: 0;
   }
+}
+
+@keyframes loopIn {
+  0% {
+    height: 100%;
+    max-height: 100%;
+  }
+
+  
+  100% {
+    max-height: 0%;
+    height: 100%;
+    display: none;
+  }
+}
+
+
+.image-1 {
+  width: 100%;
+  bottom: 0;
+  z-index: 1;
+  background: rgb(61 61 61);
+  position: absolute;
+  animation: loopIn 1s 1 ease-out;
 }
 
 .zoomIn {
