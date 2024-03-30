@@ -13,7 +13,7 @@ export const HomeSection = () => {
   }, []);
   return (
     <section id="home" className="flex">
-      <div className={`loading-wrapper ${isLoaded ? "" : "spinner"}`}>
+      <div className={"flex w-[100%]"}>
         <div className={`arrow-container animated fadeInDown h-6 w-6 ${isScrolledDown ? 'invisible': 'visible'}`}>
           <svg
             aria-hidden="true"
@@ -35,7 +35,7 @@ export const HomeSection = () => {
 
         <div
           id="home-content"
-          style={{ display: isLoaded && "grid" }}
+          style={{ display: "grid" }}
           className="px-8 lg:px-32"
         >
           <div className="title">
@@ -46,7 +46,7 @@ export const HomeSection = () => {
               <div className="about sm:text-4xl lg:text-5xl">
                 <div className="about-inner">A Frontend Developer</div>
               </div>
-              <div className="flex my-1 mx-1 opacity-0 resume">
+              <div className="flex my-1 mx-1">
                 <a
                   href="https://docs.google.com/document/d/1v-KYEXOLQV6cuoXLP1qnVAGuj-mcqkeMD5t-SvV3Wm8/edit?usp=sharing"
                   className="gradient-b hover:bg-gray-700 p-2 text-xs md:text-base text-center rounded-md icon-hover sm:opacity-80"
