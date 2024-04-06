@@ -67,6 +67,9 @@ nav {
   .project-card-bg-color {
     background-color: var(--nav-bg-color);
   }
+  .bg-image-inherit {
+    background-image: inherit;
+  }
 }
 
 .gradient-b {
