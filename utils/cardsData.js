@@ -1,5 +1,28 @@
 let data = [
   {
+    heading: "Kami vision India",
+    subheading: "Senior Frontend Developer",
+    key: "kamivision",
+    src: "https://yiiotcloud.com/",
+    referLink: "https://yiiotcloud.com/",
+    referText: "Visit Page",
+    skills: ["react", "css3", "html5"],
+    description:`Revamped the old B2C project from legacy Vue.js to React.js\n \
+
+    Enhanced mobile responsiveness (from and above 375px), implemented \
+    concurrent processing, optimized asset bundling, \
+    introduced code splitting and lazy loading, introduced Nx \
+    monorepo to separate buisness logic, transitioned \
+    some projects to server-side rendering, and integrated \
+    Stripe payment gateway into B2C projects, \
+    internationalize using react-intl. \
+    Implemented tests with Jest and developed a reusable\
+    UI component using Storybook on top of antd, suitable \
+    for both B2C and B2B applications.\n \
+    
+    Executed sprint and release planning in Jira.`,
+  },
+  {
     heading: "Klinify",
     subheading: "Frontend Developer",
     key: "klinify",

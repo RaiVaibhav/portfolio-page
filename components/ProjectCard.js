@@ -56,7 +56,7 @@ const ProjectCard = ({
               )}
             </div>
           )}
-          {description && <div>{description}</div>}
+          {description && <p className="whitespace-pre-line">{description}</p>}
           <br />
           {suffixImage && (
             <Image

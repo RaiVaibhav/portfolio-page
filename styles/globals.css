@@ -1,92 +1,58 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 @layer utilities {
   .grid-gap-1 {
-    grid-gap: 0.25rem;
+    @apply gap-1;
   }
   .grid-gap-2 {
-    grid-gap: 0.5rem;
+    @apply gap-2;
   }
   .grid-gap-3 {
-    grid-gap: 0.75rem;
+    @apply gap-3;
   }
   .grid-gap-4 {
-    grid-gap: 1rem;
+    @apply gap-4;
   }
 }
 :root {
   --nav-bg-color: rgb(35, 35, 35);
 }
 html {
-  @apply text-white
+  @apply text-white;
 }
-
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  position: relative;
-
+  @apply box-border relative m-0 p-0;
 }
-
 body {
+  @apply bg-[rgb(61_61_61)];
   /* background: rgb(41 41 41); */
-  background-color: rgb(61 61 61) !important;
 }
-
 section {
-  height: 100vh;
-  max-width: 100vw;
+  @apply h-screen max-w-[100vw];
 }
-
 a {
-  color: inherit;
-  text-decoration: none;
+  @apply text-inherit no-underline;
 }
-
 nav {
-  position: fixed;
-  z-index: 999;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-
+  @apply fixed z-[999] w-full flex justify-between;
 }
-
 .nav-scrolled-bg {
+  @apply shadow-[rgb(0_0_0_/_5%)_0px_3px_3px];
   background: rgb(35, 35, 35);
-  box-shadow: rgb(0 0 0 / 5%) 0px 3px 3px;
 }
-
 @layer utilities {
   .flex-2 {
-    flex: 2 !important;
+    @apply flex-[2];
   }
   .project-card-bg-color {
-    background-color: var(--nav-bg-color);
+    @apply bg-[color:var(--nav-bg-color)];
   }
   .bg-image-inherit {
-    background-image: inherit;
+    @apply bg-[inherit];
   }
 }
-
 .gradient-b {
-  border: 10px solid;
-  border-width: 3px;
+  @apply border-[10px] border-solid border-[3px];
   border-image: linear-gradient(to left, #743ad5, #d53a9d) 1;
 }
-
-/* img {
-  max-width: 250px;
-  color: white;
-  border-width: 3px;
-  border-style: solid;
-  border-image: 
-    linear-gradient(
-      to bottom, 
-      red, 
-      rgba(0, 0, 0, 0)
-    ) 1 100%;
-} */
