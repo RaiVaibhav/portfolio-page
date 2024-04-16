@@ -1,11 +1,28 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
+import { SpotLightDispatchContext } from "../context/SpotLight";
 
 function ProjectIframe({ src }) {
   let [isLoading, SetisLoading] = useState(false);
   const [srcUrl, setSrcUrl] = useState("");
+  const dispatch = useContext(SpotLightDispatchContext);
   return (
     <div className="flex-1 lg:flex-2 iframe flex">
       <iframe
+        onMouseEnter={() =>{
+          console.log('abc')
+          dispatch({
+            type: "setIsMouseOverIframe",
+            isMouseOverIframe: true,
+          })
+        }
+
+        }
+        onMouseLeave={() =>
+          dispatch({
+            type: "setIsMouseOverIframe",
+            isMouseOverIframe: false,
+          })
+        }
         title={srcUrl}
         loading="lazy"
         className={`rounded-md ${(isLoading || !srcUrl) && "invisible"}`}
