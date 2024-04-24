@@ -9,9 +9,15 @@ import SpotLightControLImage from "../public/spotlight.png";
 export default function SpotLightController() {
   const dispatch = useContext(SpotLightDispatchContext);
   const val = useContext(SpotLightContext);
-  console.log(val)
+  console.log(val);
   return (
     <div className="sticky bottom-10 float-right mr-10 z-10  hidden md:block">
+      <div
+        className="absolute w-[100%] h-[100%] rounded-full"
+        style={{
+          boxShadow: "0px 0px 10px 10px #545353",
+        }}
+      ></div>
       <button
         className={` ${
           val.isSpotLightEnabled
@@ -28,9 +34,9 @@ export default function SpotLightController() {
       >
         <Image
           src={SpotLightControLImage}
-          width={30}
-          height={30}
-          alt="spotlight controller"
+          width={25}
+          height={25}
+          alt="spotlight controller "
         ></Image>
       </button>
     </div>

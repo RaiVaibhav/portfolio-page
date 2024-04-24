@@ -19,7 +19,8 @@ module.exports = {
       },
       animation: {
         spotLightOff: "spotLightOff 600ms ease-in-out",
-        spotLightOn: "spotLightOn 600ms ease-in-out"
+        spotLightOn: "spotLightOn 600ms ease-in-out",
+        pingSlow: 'ping 3s linear infinite',
       }
     }
   },

@@ -9,7 +9,6 @@ function ProjectIframe({ src }) {
     <div className="flex-1 lg:flex-2 iframe flex">
       <iframe
         onMouseEnter={() =>{
-          console.log('abc')
           dispatch({
             type: "setIsMouseOverIframe",
             isMouseOverIframe: true,

@@ -26,7 +26,7 @@ export function SpotLightWrapper() {
       style={{
         background: isMouseOverIframe
           ? "none"
-          : `radial-gradient(circle at ${clientPosition.clientX}px ${clientPosition.clientY}px, #00000000 10px, #000000ee 350px)`,
+          : `radial-gradient(circle at ${clientPosition.clientX}px ${clientPosition.clientY}px, #00000000 10px, #000000ee 400px)`,
         display: isSpotLightEnabled ? 'block' : 'none'
       }}
       className={
